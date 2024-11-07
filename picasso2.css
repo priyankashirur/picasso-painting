@@ -1,0 +1,140 @@
+/* art container style */
+
+.art-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-rows: 1fr auto;
+  height: 100vw;
+  width: 100vh;
+  overflow: hidden;
+}
+
+.sun {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  background-color: orange;
+  border-radius: 50%;
+  top: 2vw;
+  right: 2vw;
+  z-index: 2;
+}
+
+.mount {
+  position: absolute;
+  bottom: 60px;
+}
+
+.mount1 {
+  border-left: 6vw solid transparent;
+  border-right: 6vw solid transparent;
+  border-bottom: 12vw solid #2fb82f;
+  left: 10px;
+  z-index: 2;
+}
+
+.mount2 {
+  border-left: 8vw solid transparent;
+  border-right: 8vw solid transparent;
+  border-bottom: 16vw solid #228b22;
+  left: 50px;
+  z-index: 0;
+}
+
+.mount3 {
+  border-left: 12vw solid transparent;
+  border-right: 12vw solid transparent;
+  border-bottom: 12vw solid #226b22;
+  left: 90px;
+  z-index: 2;
+}
+
+@media (min-width: 1200px) {
+  .sun {
+    width: 8vw;
+    height: 8vw;
+    top: 3vh;
+    right: 3vw;
+  }
+
+  .mount1 {
+    border-left: 6vw solid transparent;
+    border-right: 6vw solid transparent;
+    border-bottom: 10vw solid #32cd32;
+    left: 4vw;
+  }
+
+  .mount2 {
+    border-left: 8vw solid transparent;
+    border-right: 8vw solid transparent;
+    border-bottom: 14vw solid #228b22;
+    left: 10vw;
+  }
+
+  .mount3 {
+    border-left: 12vw solid transparent;
+    border-right: 12vw solid transparent;
+    border-bottom: 14vw solid #1e721e;
+    left: 10vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sun {
+    width: 12vw;
+    height: 12vw;
+    top: 4vh;
+    right: 4vw;
+  }
+
+  .mount1 {
+    border-left: 6vw solid transparent;
+    border-right: 6vw solid transparent;
+    border-bottom: 16vw solid #32cd32;
+    left: 6vw;
+  }
+
+  .mount2 {
+    border-left: 8vw solid transparent;
+    border-right: 8vw solid transparent;
+    border-bottom: 20vw solid #228b22;
+    left: 12vw;
+  }
+  .mount3 {
+    border-left: 12vw solid transparent;
+    border-right: 12vw solid transparent;
+    border-bottom: 20vw solid #1e721e;
+    left: 20vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .sun {
+    width: 15vw;
+    height: 15vw;
+    top: 5vh;
+    right: 5vw;
+  }
+
+  .mount1 {
+    border-left: 12vw solid transparent;
+    border-right: 12vw solid transparent;
+    border-bottom: 24vw solid #32cd32;
+    left: 4vw;
+  }
+
+  .mount2 {
+    border-left: 14vw solid transparent;
+    border-right: 14vw solid transparent;
+    border-bottom: 28vw solid #228b22;
+    left: 10vw;
+  }
+  .mount3 {
+    border-left: 14vw solid transparent;
+    border-right: 14vw solid transparent;
+    border-bottom: 28vw solid #1e721e;
+    left: 20vw;
+  }
+}
